@@ -1,121 +1,80 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>导航</title>
-        <link rel="stylesheet" href="frozenui.css"/>
-    </head>
-    <body>
-        <div class="ui-container">
-            <section class="search-block">
-                <form class="form-wrapper" action="https://m.baidu.com/s" target="_blank">
-                    <section class="ui-input-wrap ui-border-t">
-                        <div class="ui-input ui-border-radius">
-                            <input type="text" name="wd" placeholder="百度一下 你就知道"  required>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航</title>
+    <link rel="stylesheet" href="frozenui.css" />
+    <base target="_blank">
+    <style>.ui-li-icon-cell{margin: 10px 0;text-align: center;}.footer{height: 55px;display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: center;background-color: #F7F7F7;}</style>
+</head>
+
+<body>
+    <div class="ui-container">
+        <div class="ui-tab ">
+            <ul class="ui-tab-nav ui-border-b ">
+                <li class="current"><span>百度一下</span></li>
+                <li><span>导航</span></li>
+            </ul>
+        </div>
+        <section class="search-block">
+            <form class="form-wrapper" action="https://m.baidu.com/s">
+                <section class="ui-input-wrap ui-border-t">
+                    <div class="ui-input ui-border-radius">
+                        <input type="text" name="wd" placeholder="百度一下 你就知道" required>
+                    </div>
+                    <input name="tn" type="hidden" value="baidu">
+                    <input name="ie" type="hidden" value="utf-8" />
+                    <button class="ui-btn">百度</button>
+                </section>
+            </form>
+        </section>
+        <div class="ui-grid-icon">
+            <ul class="ui-list">
+                <li class="ui-li-icon-cell">
+                    <a href="https://m.baidu.com/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/baidu.png)"></span>
                         </div>
-                        <input name="tn" type="hidden" value="baidu">
-                        <input name="ie" type="hidden" value="utf-8" />
-                        <button class="ui-btn">百度一下</button>
-                    </section>
-                </form>
-            </section>
+                        <h5>百度</h5>
+                    </a>
+                </li>
+                <li class="ui-li-icon-cell">
+                    <a href="https://www.bing.com/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/bing.png)"></span>
+                        </div>
+                        <h5>必应</h5>
+                    </a>
+                </li>
+                <li class="ui-li-icon-cell">
+                    <a href="https://www.google.com/ncr">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/google.png)"></span>
+                        </div>
+                        <h5>Google</h5>
+                    </a>
+                </li>
+                <li class="ui-li-icon-cell">
+                    <a href="https://myaccount.google.com/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/google.png)"></span>
+                        </div>
+                        <h5>帐号</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="">
             <ul class="ui-list ui-list-function ui-border-tb">
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/baidu.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://m.baidu.com/" target="_blank">
-                            <h4 class="ui-nowrap">百度</h4>
-                            <p>m.baidu.com</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/bing.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://www.bing.com/" target="_blank">
-                            <h4 class="ui-nowrap">必应搜索(中国)</h4>
-                            <p>www.bing.com</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/google.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://www.google.com/ncr" target="_blank">
-                            <h4 class="ui-nowrap">Google</h4>
-                            <p>www.google.com</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/google.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://myaccount.google.com/" target="_blank">
-                            <h4 class="ui-nowrap">Google 帐号</h4>
-                            <p>myaccount.google.com</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/cmcc.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://wap.10086.cn/" target="_blank">
-                            <h4 class="ui-nowrap">中国移动(WAP)</h4>
-                            <p>wap.10086.cn</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/cmcc.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://app.10086.cn/downfile/apk/ChinaMobile10086.apk" target="_blank">
-                            <h4 class="ui-nowrap">中国移动手机营业厅</h4>
-                            <p>app.10086.cn</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/cmcc.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="http://wx.10086.cn/website/businessPlatform/universalShop" target="_blank">
-                            <h4 class="ui-nowrap">中国移动(微)</h4>
-                            <p>wx.10086.cn</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/cmcc.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="http://dx.10086.cn/AilbM3e">
-                            <h4 class="ui-nowrap">中国移动 - 在线客服</h4>
-                            <p>dx.10086.cn</p>
-                        </a>
-                    </div>
-                </li>
                 <li>
                     <div class="ui-avatar">
                         <span style="background-image:url(./img/gmcc.png)"></span>
                     </div>
                     <div class="ui-list-info ui-border-t">
-                        <a href="http://wap.gd.10086.cn/" target="_blank">
-                            <h4 class="ui-nowrap">广东移动(WAP)</h4>
+                        <a href="https://wap.gd.10086.cn/">
+                            <h4 class="ui-nowrap">广东移动-掌上营业厅</h4>
                             <p>wap.gd.10086.cn</p>
                         </a>
                     </div>
@@ -125,42 +84,92 @@
                         <span style="background-image:url(./img/gmcc.png)"></span>
                     </div>
                     <div class="ui-list-info ui-border-t">
-                        <a href="https://h5.gmccopen.com/" target="_blank">
-                            <h4 class="ui-nowrap">城市 - 广州</h4>
-                            <p>h5.gmccopen.com</p>
+                        <a href="http://dx.10086.cn/AilbM3e">
+                            <h4 class="ui-nowrap">广东移动-在线客服</h4>
+                            <p>dx.10086.cn</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ui-grid ui-grid-bisect">
+            <ul>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://wap.gd.10086.cn/hright/gdapplqzx/hqy/index.html?initialindex=true&initial4gflag=true">
+                            <h4>会员中心</h4>
+                            <p>广东</p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/gmcc.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://foshan.gmccfs.cn/richinfo/cmweimailapp/index.do?h5loginCode=10006&h5loginId=0757" target="_blank">
-                            <h4 class="ui-nowrap">城市 - 佛山</h4>
-                            <p>foshan.gmccfs.cn</p>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="http://wx.10086.cn/website/businessPlatform/shop?pageid=93f72b0372be4cfb863f4dcd096db0f3">
+                            <h4>86商城（微）</h4>
+                            <p>广东</p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/139mail.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://html5.mail.10086.cn/" target="_blank">
-                            <h4 class="ui-nowrap">139手机邮箱</h4>
-                            <p>html5.mail.10086.cn</p>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://gd.10086.cn/gmccapp/confactpage/signInNew/index.html#/">
+                            <h4>任务广场-签到</h4>
+                            <p>广东</p>
                         </a>
                     </div>
                 </li>
                 <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="http://gd.dccp.liuliangjia.cn/dccp-portal/school.ajax">
+                            <h4>校园专区</h4>
+                            <p>gd.dccp.liuliangjia.cn</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://wap.gd.10086.cn/nwap/campus/campusZoneNew/index.jsps">
+                            <h4>动感专区(校园)</h4>
+                            <p>wap.gd.10086.cn</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://gd.10086.cn/gmccapp/webpage/networkVPages/index.html?channelId=WAP">
+                            <h4>短号(家庭网|集团网)</h4>
+                            <p>广东</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://wap.gd.10086.cn/nwap/kd/kdHouseholdBill/index.jsps?&DrainageChannel=DSSZJTDX&WT.ac_id=kdxz_190606_O_DSSZJTDX">
+                            <h4>家庭账单</h4>
+                            <p>广东</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://gd.10086.cn/yyt">
+                            <h4>智慧生活(APP)</h4>
+                            <p>gd.10086.cn</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="">
+            <ul class="ui-list ui-list-function ui-border-tb">
+                <li>
                     <div class="ui-avatar">
-                        <span style="background-image:url(./img/fetion.png)"></span>
+                        <span style="background-image:url(./img/cmcc.png)"></span>
                     </div>
                     <div class="ui-list-info ui-border-t">
-                        <a href="http://mywx.zone139.com/hfh5Call/index.html?channel=3" target="_blank">
-                            <h4 class="ui-nowrap">和飞信-电话(每月)</h4>
-                            <p>mywx.zone139.com</p>
+                        <a href="https://wap.10086.cn/">
+                            <h4 class="ui-nowrap">中国移动-掌上营业厅</h4>
+                            <p>wap.10086.cn</p>
                         </a>
                     </div>
                 </li>
@@ -169,63 +178,158 @@
                         <span style="background-image:url(./img/cmcc.png)"></span>
                     </div>
                     <div class="ui-list-info ui-border-t">
-                        <a href="https://touch.10086.cn/" target="_blank">
-                            <h4 class="ui-nowrap">中国移动商城</h4>
+                        <a href="https://wx.10086.cn/website/businessPlatform/universalShop">
+                            <h4 class="ui-nowrap">中国移动-个人中心(微)</h4>
+                            <p>wx.10086.cn</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ui-grid ui-grid-bisect">
+            <ul>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://touch.10086.cn/i/mobile/equity.html?c=11&e=99&t=20180806180000">
+                            <h4>权益中心</h4>
+                            <p>专属</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://dev.coc.10086.cn/coc3/gr/static-2c/fcyr4/index.html#/?channelId=C10000018067&from=singlemessage">
+                            <h4>宝藏卡权益</h4>
+                            <p>定向</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://touch.10086.cn/hd/qgqqw/200.html">
+                            <h4>全国亲情网</h4>
+                            <p>集团</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://dev.coc.10086.cn/coc3/market-web/coc3-market-web/#/home">
+                            <h4>中国移动-权益超市</h4>
+                            <p>集团</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://qqt.cmicrwx.cn/2016tyjf/xhmqqthy/res/wap/activity2.html">
+                            <h4>全球通星动日</h4>
+                            <p>集团</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://touch.10086.cn/">
+                            <h4>移动商城(WAP)</h4>
                             <p>touch.10086.cn</p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/playstore.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://play.google.com/store" target="_blank">
-                            <h4 class="ui-nowrap">Google Play Store</h4>
-                            <p>play.google.com</p>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://shop.10086.cn/">
+                            <h4>移动商城(PC)</h4>
+                            <p>shop.10086.cn</p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/ydmm.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="http://a.10086.cn/pams2/l/s.do?p=72&ver=2" target="_blank">
-                            <h4 class="ui-nowrap">中国移动MM应用商店</h4>
-                            <p>a.10086.cn</p>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://app.10086.cn/downfile/apk/ChinaMobile10086.apk">
+                            <h4>手机营业厅(APP)</h4>
+                            <p>集团</p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/yyb.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="http://app.qq.com/" target="_blank">
-                            <h4 class="ui-nowrap">应用宝</h4>
-                            <p>app.qq.com</p>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="https://wx.10086.cn/website/spa/complaint/complaintsselect">
+                            <h4>在线投诉</h4>
+                            <p>集团</p>
                         </a>
                     </div>
                 </li>
                 <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/mi.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="http://m.app.mi.com/" target="_blank">
-                            <h4 class="ui-nowrap">小米应用商店</h4>
-                            <p>app.mi.com</p>
+                    <div class="ui-grid-info ui-border-r">
+                        <a href="http://ngwfh5.cmcc-cs.cn:10014/module/index.html#/">
+                            <h4>10080-升级投诉</h4>
+                            <p>集团</p>
                         </a>
                     </div>
                 </li>
+            </ul>
+        </div>
+        <div class="">
+            <ul class="ui-list ui-list-function ui-border-tb">
+                <li>
+                    <div class="ui-avatar">
+                        <span style="background-image:url(./img/139mail.png)"></span>
+                    </div>
+                    <div class="ui-list-info ui-border-t">
+                        <a href="https://html5.mail.10086.cn/">
+                            <h4 class="ui-nowrap">139手机邮箱</h4>
+                            <p>html5.mail.10086.cn</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ui-grid-icon">
+            <ul class="ui-list">
+                <li class="ui-li-icon-cell">
+                    <a href="https://play.google.com/store">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/playstore.png)"></span>
+                        </div>
+                        <h5>Play</h5>
+                    </a>
+                </li>
+                <li class="ui-li-icon-cell">
+                    <a href="http://mm.10086.mmarket.com/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/ydmm.png)"></span>
+                        </div>
+                        <h5>MM</h5>
+                    </a>
+                </li>
+                <li class="ui-li-icon-cell">
+                    <a href="https://app.qq.com/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/yyb.png)"></span>
+                        </div>
+                        <h5>应用宝</h5>
+                    </a>
+                </li>
+                <li class="ui-li-icon-cell">
+                    <a href="https://m.app.mi.com/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/mi.png)"></span>
+                        </div>
+                        <h5>小米</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="">
+            <ul class="ui-list ui-list-function ui-border-tb">
                 <li>
                     <div class="ui-avatar">
                         <span style="background-image:url(./img/ifeng.png)"></span>
                     </div>
                     <div class="ui-list-info ui-border-t">
-                        <a href="https://i.ifeng.com/" target="_blank">
-                            <h4 class="ui-nowrap">凤凰网</h4>
+                        <a href="https://i.ifeng.com/">
+                            <h4 class="ui-nowrap">凤凰新闻</h4>
                             <p>i.ifeng.com</p>
                         </a>
                     </div>
@@ -235,104 +339,90 @@
                         <span style="background-image:url(./img/thepaper.png)"></span>
                     </div>
                     <div class="ui-list-info ui-border-t">
-                        <a href="https://m.thepaper.cn/" target="_blank">
+                        <a href="https://m.thepaper.cn/">
                             <h4 class="ui-nowrap">澎湃新闻</h4>
                             <p>m.thepaper.cn</p>
                         </a>
                     </div>
                 </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/sina.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://sina.cn/" target="_blank">
-                            <h4 class="ui-nowrap">新浪</h4>
-                            <p>sina.cn</p>
-                        </a>
-                    </div>
+            </ul>
+        </div>
+        <div class="ui-grid-icon">
+            <ul class="ui-list">
+                <li class="ui-li-icon-cell">
+                    <a href="https://sina.cn/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/sina.png)"></span>
+                        </div>
+                        <h5>新浪</h5>
+                    </a>
                 </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/qqnews.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://xw.qq.com/" target="_blank">
-                            <h4 class="ui-nowrap">腾讯新闻</h4>
-                            <p>xw.qq.com</p>
-                        </a>
-                    </div>
+                <li class="ui-li-icon-cell">
+                    <a href="https://xw.qq.com/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/qqnews.png)"></span>
+                        </div>
+                        <h5>腾讯</h5>
+                    </a>
                 </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/163.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://3g.163.com/" target="_blank">
-                            <h4 class="ui-nowrap">网易新闻</h4>
-                            <p>3g.163.com</p>
-                        </a>
-                    </div>
+                <li class="ui-li-icon-cell">
+                    <a href="https://3g.163.com/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/163.png)"></span>
+                        </div>
+                        <h5>网易</h5>
+                    </a>
                 </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/sohu.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://m.sohu.com/" target="_blank">
-                            <h4 class="ui-nowrap">搜狐</h4>
-                            <p>m.sohu.com</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/12306.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="http://www.gtbyxx.com/wxg/ky/traintimetable.jsp" target="_blank">
-                            <h4 class="ui-nowrap">广铁-列车时刻表</h4>
-                            <p>www.gtbyxx.com</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/12306.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="http://www.gtbyxx.com/wxg/ky/zhengwan.jsp" target="_blank">
-                            <h4 class="ui-nowrap">广铁-正晚点</h4>
-                            <p>www.gtbyxx.com</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/12306.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="http://www.gtbyxx.com/wxg/ky/houcheng.jsp" target="_blank">
-                            <h4 class="ui-nowrap">广铁-实时候乘</h4>
-                            <p>www.gtbyxx.com</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="ui-avatar">
-                        <span style="background-image:url(./img/12306.png)"></span>
-                    </div>
-                    <div class="ui-list-info ui-border-t">
-                        <a href="https://mobile.12306.cn/weixin/wxcore/init" target="_blank">
-                            <h4 class="ui-nowrap">12306-余票查询</h4>
-                            <p>mobile.12306.cn</p>
-                        </a>
-                    </div>
+                <li class="ui-li-icon-cell">
+                    <a href="https://m.sohu.com/">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/sohu.png)"></span>
+                        </div>
+                        <h5>搜狐</h5>
+                    </a>
                 </li>
             </ul>
-            <div class="ui-tooltips">
-                <div class="ui-tooltips-cnt ui-border-b">©2019 极速导航 Hosted on GitHub.</div>
-            </div>
         </div>
-    </body>
+        <div class="ui-grid-icon">
+            <ul class="ui-list">
+                <li class="ui-li-icon-cell">
+                    <a href="http://www.gtbyxx.com/wxg/ky/traintimetable.jsp">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/12306.png)"></span>
+                        </div>
+                        <h5>时刻表</h5>
+                    </a>
+                </li>
+                <li class="ui-li-icon-cell">
+                    <a href="http://www.gtbyxx.com/wxg/ky/zhengwan.jsp">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/12306.png)"></span>
+                        </div>
+                        <h5>正晚点</h5>
+                    </a>
+                </li>
+                <li class="ui-li-icon-cell">
+                    <a href="http://www.gtbyxx.com/wxg/ky/houcheng.jsp">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/12306.png)"></span>
+                        </div>
+                        <h5>候乘</h5>
+                    </a>
+                </li>
+                <li class="ui-li-icon-cell">
+                    <a href="https://mobile.12306.cn/weixin/wxcore/init">
+                        <div class="ui-img-icon">
+                            <span style="background-image:url(./img/12306.png)"></span>
+                        </div>
+                        <h5>余票</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            ©2020 极速导航 Hosted on GitHub.
+        </div>
+    </div>
+</body>
+
 </html>
