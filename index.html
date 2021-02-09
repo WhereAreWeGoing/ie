@@ -66,6 +66,19 @@
                 </li>
             </ul>
         </div>
+        <section class="search-block">
+            <form class="form-wrapper" action="https://ause.azurewebsites.net/">
+                <section class="ui-input-wrap ui-border-t">
+                    <input name="m" type="hidden" value="3">
+                    <input name="e" type="hidden" value="H">
+                    <input name="p" type="hidden" value="6">
+                    <div class="ui-input ui-border-radius">
+                        <input type="text" name="url" placeholder="待生成二维码的链接" required>
+                    </div>
+                    <button class="ui-btn">QR</button>
+                </section>
+            </form>
+        </section>
         <div class="">
             <ul class="ui-list ui-list-function ui-border-tb">
                 <li>
@@ -383,39 +396,18 @@
                 </li>
             </ul>
         </div>
-        <div class="ui-grid-icon">
-            <ul class="ui-list">
-                <li class="ui-li-icon-cell">
-                    <a href="http://www.gtbyxx.com/wxg/ky/traintimetable.jsp">
-                        <div class="ui-img-icon">
-                            <span style="background-image:url(./img/12306.png)"></span>
-                        </div>
-                        <h5>时刻表</h5>
-                    </a>
-                </li>
-                <li class="ui-li-icon-cell">
-                    <a href="http://www.gtbyxx.com/wxg/ky/zhengwan.jsp">
-                        <div class="ui-img-icon">
-                            <span style="background-image:url(./img/12306.png)"></span>
-                        </div>
-                        <h5>正晚点</h5>
-                    </a>
-                </li>
-                <li class="ui-li-icon-cell">
-                    <a href="http://www.gtbyxx.com/wxg/ky/houcheng.jsp">
-                        <div class="ui-img-icon">
-                            <span style="background-image:url(./img/12306.png)"></span>
-                        </div>
-                        <h5>候乘</h5>
-                    </a>
-                </li>
-                <li class="ui-li-icon-cell">
-                    <a href="https://mobile.12306.cn/weixin/wxcore/init">
-                        <div class="ui-img-icon">
-                            <span style="background-image:url(./img/12306.png)"></span>
-                        </div>
-                        <h5>余票</h5>
-                    </a>
+        <div class="">
+            <ul class="ui-list ui-list-function ui-border-tb">
+                <li>
+                    <div class="ui-avatar">
+                        <span style="background-image:url(./img/12306.png)"></span>
+                    </div>
+                    <div class="ui-list-info ui-border-t">
+                        <a href="https://mobile.12306.cn/weixin/wxcore/init">
+                            <h4 class="ui-nowrap">余票(火车)</h4>
+                            <p>mobile.12306.cn</p>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </div>
